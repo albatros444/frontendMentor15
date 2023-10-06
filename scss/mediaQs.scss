@@ -1,0 +1,39 @@
+@media screen and (max-width: 585px) {
+  .background {
+    height: 100%;
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 310px;
+      height: auto;
+      margin-top: 73px;
+      border-radius: 6px;
+      box-shadow: 0 10px 35px hsl(204, 38%, 85%);
+      &__joinSection {
+        height: auto;
+        padding: 24px;
+        padding-top: 28px;
+        h2 {
+          font-size: 20px;
+          margin-bottom: 24px;
+        }
+        &__p1 {
+          margin-bottom: 17px;
+          font-size: 15px;
+          line-height: 1.35;
+        }
+        &__p2 {
+          font-size: 14px;
+          line-height: 1.85;
+          margin-bottom: 6px;
+        }
+      }
+      &__subSection {
+        padding: 24px;
+      }
+      &__whyUsSection {
+        padding: 24px;
+      }
+    }
+  }
+}

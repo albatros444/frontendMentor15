@@ -1,0 +1,209 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  position: relative;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p {
+  margin-top: 0;
+}
+
+textarea,
+input {
+  outline: none;
+  font-family: inherit;
+}
+
+.attribution {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  margin: auto;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+.background .card {
+  display: grid;
+  grid-template-areas: "joinSn joinSn" "subSn whyUsSn";
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  max-width: 635px;
+  height: 475px;
+  margin: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px hsl(204, 46%, 81%);
+}
+.background .card__joinSection {
+  grid-area: joinSn;
+  height: 216px;
+  padding: 40px;
+}
+.background .card__joinSection h2 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 25px;
+  letter-spacing: -0.01em;
+}
+.background .card__joinSection__p1 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: hsl(64, 83%, 48%);
+}
+.background .card__joinSection__p2 {
+  line-height: 1.64;
+  color: hsl(218, 22%, 67%);
+  letter-spacing: -0.01em;
+}
+.background .card__subSection {
+  grid-area: subSn;
+  padding: 40px;
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+}
+.background .card__subSection h2 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin-bottom: 18px;
+}
+.background .card__subSection__price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.background .card__subSection__price .left {
+  margin-bottom: 0px;
+  padding-right: 12px;
+  font-size: 31px;
+  font-weight: 700;
+  color: hsl(173, 100%, 97%);
+  text-shadow: 0 0px 0.1em hsl(180, 30%, 38%);
+}
+.background .card__subSection__price .right {
+  margin-bottom: 0;
+  font-weight: 300;
+  color: hsl(177, 49%, 74%);
+}
+.background .card__subSection__access {
+  margin-bottom: 30px;
+  color: hsl(173, 75%, 89%);
+  letter-spacing: -0.01em;
+  text-shadow: 0 0px 0.1em hsl(180, 30%, 38%);
+}
+.background .card__subSection button {
+  display: inline-block;
+  width: 100%;
+  height: 48px;
+  padding: 0;
+  outline: inherit;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(71, 100%, 88%);
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 0 10px 35px hsl(179, 64%, 35%);
+  transition: 0.13s ease-in-out;
+}
+.background .card__subSection button:hover {
+  background-color: hsl(71, 81%, 45%);
+}
+.background .card__whyUsSection {
+  grid-area: whyUsSn;
+  padding: 40px;
+  background-color: hsl(179, 46%, 53%);
+}
+.background .card__whyUsSection h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(175, 48%, 95%);
+  margin-bottom: 17px;
+}
+.background .card__whyUsSection ul {
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.45;
+  color: hsl(171, 75%, 89%);
+  text-shadow: 0 0px 0.001em hsl(180, 30%, 38%);
+}
+
+@media screen and (max-width: 585px) {
+  .background {
+    height: 100%;
+  }
+  .background .card {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: auto;
+    margin-top: 73px;
+    border-radius: 6px;
+    box-shadow: 0 10px 35px hsl(204, 38%, 85%);
+  }
+  .background .card__joinSection {
+    height: auto;
+    padding: 24px;
+    padding-top: 28px;
+  }
+  .background .card__joinSection h2 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .background .card__joinSection__p1 {
+    margin-bottom: 17px;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+  .background .card__joinSection__p2 {
+    font-size: 14px;
+    line-height: 1.85;
+    margin-bottom: 6px;
+  }
+  .background .card__subSection {
+    padding: 24px;
+  }
+  .background .card__whyUsSection {
+    padding: 24px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
